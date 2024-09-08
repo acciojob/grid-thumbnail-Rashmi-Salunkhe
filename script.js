@@ -1,4 +1,3 @@
-//your JS code here. If required.
 const images = [
   {
     thumbnail: 'https://bikekharido.in/wp-content/uploads/2022/01/TVS-Jupiter-Classic-ET-Fi.png',
@@ -16,6 +15,16 @@ const images = [
 
 // Function to create the image gallery
 function createImageGallery() {
+  // Create welcome text
+  const welcomeText = document.createElement('h1');
+  welcomeText.textContent = 'Welcome to the world of Web development';
+  document.body.appendChild(welcomeText);
+
+  // Create div with id 'text'
+  const textDiv = document.createElement('div');
+  textDiv.id = 'text';
+  document.body.appendChild(textDiv);
+
   const galleryContainer = document.createElement('div');
   galleryContainer.className = 'image-gallery';
 
